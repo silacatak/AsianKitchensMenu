@@ -32,7 +32,7 @@ const menu = [
     category: "China",
     price: 5.99,
     img:
-      "https://www.savingdessert.com/wp-content/uploads/2019/02/Dan-Dan-Noodles-10.jpg",
+      "https://thewoksoflife.com/wp-content/uploads/2014/11/dan-dan-noodles-12.jpg",
     desc: `Dan dan noodle, serving with green onion `,
   },
   {
@@ -95,7 +95,7 @@ const btnCreate =() => {
      <button class ="btn btn-outline-dark btn-item" id="Japan"> Japan</button>
      <button class ="btn btn-outline-dark btn-item" id="China"> China</button>
   `
-  btnDom.innerHTML = buttons;
+  btnDOM.innerHTML = buttons;
 }
 
 btnCreate();
@@ -107,7 +107,7 @@ const foodRecipes = (item) =>{
       <img src="${item.img}" alt="${item.title}" class="photo">
        <div class="menu-info">
         <div class="menu-title">
-         <h4> ${item.title}</h4>
+         <h4>${item.title}</h4>
          <h4 class="price">${item.price}</h4>  
         </div>
         <div class="menu-text">${item.desc}</div>
@@ -119,17 +119,16 @@ const foodRecipes = (item) =>{
 }
 
 // function for show all foods
-const showAllFoods = () =>{
+const showAllFoods = () => {
 
   let allFoods = ""
 
   menu.map(item =>{
     allFoods += foodRecipes(item)
   })
-  menuDom.innerHTML = allFoods;
+  menuDOM.innerHTML = allFoods;
 
 }
-
 //UI event for All foods
 allBTN = document.querySelector("#All")
 //Event listeners

@@ -53,7 +53,7 @@ h2{
 .menu-title{
     display:flex;
     justify-content: space-between;
-    border-botto: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 h4{
