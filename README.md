@@ -1,5 +1,5 @@
 # AsianKitchensMenu
 a site offred asian cuisine
 
-### Live
+### Site
 - https://asiakitchens.netlify.app/
